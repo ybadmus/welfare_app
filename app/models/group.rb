@@ -1,8 +1,6 @@
 class Group < ApplicationRecord
-  validates :name, presence: true, uniqueness: true
-  validates :icon, presence: true
-
-  scope :not_grouped, -> { left_outer_joins(:categories).where('categories.group_id' => nil) }
+  validates :name, presence: { message: 'is missing. please add a name' }, uniqueness: true
+  validates :icon, presence: { message: 'is missing. please add an icon' }
 
   belongs_to :user
   has_many :categories
