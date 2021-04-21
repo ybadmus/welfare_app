@@ -2,5 +2,7 @@ class Group < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :icon, presence: true
 
-  has_many :user
+  belongs_to :user
+  has_many :categories
+  has_many :welfares, through: :categories
 end
