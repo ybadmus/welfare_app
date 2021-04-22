@@ -10,7 +10,7 @@ class WelfaresController < ApplicationController
   end
 
   def new
-    @exercise = current_user.exercises.new
+    @exercise = current_user.welfares.new
   end
 
   def create
