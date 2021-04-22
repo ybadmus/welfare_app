@@ -4,4 +4,4 @@ class User < ApplicationRecord
 
   has_many :welfares, foreign_key: :authorId
   has_many :groups
-endsername
+end
