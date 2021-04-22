@@ -5,7 +5,7 @@ class WelfaresController < ApplicationController
     @welfares = if params[:external]
                   current_user.welfares.not_grouped.includes(:groups)
                 else 
-                  current_user.welfares.includes() 
+                  current_user.welfares.includes(:groups) 
                 end
   end
 

@@ -1,4 +1,4 @@
-<h1 class="nav-title"><%= @group.Name %></h1>
+<h1 class="nav-title"><%= @group.name %></h1>
 
-<%= render 'exercises/exercises', collection: @welfares = @group.welfares  %>
+<%= render 'welfares/welfare', collection: @welfares = @group.welfares  %>
 <%= link_to raw('<span>Add Welfare</span>'), new_welfare_path(group: @group.id), class: 'action-btn' %>

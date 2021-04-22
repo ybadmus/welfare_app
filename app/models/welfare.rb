@@ -7,5 +7,5 @@ class Welfare < ApplicationRecord
 
   belongs_to :user, class_name: :user, foreign_key: :authorId
   has_many :categories
-  has_many :groups, through :categories
+  has_many :groups, through: :categories
 end 
