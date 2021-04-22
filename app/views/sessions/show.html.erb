@@ -1,0 +1,13 @@
+<div>
+  <ul>
+    <li><%= current_user.Name %></li>
+    <hr>
+    <li><%= link_to 'All welfare collections', welfares_path %></li>
+    <hr>
+    <li><%= link_to 'External welfare collections', welfares_path(external: true) %></li>
+    <hr>
+    <li><%= link_to 'All groups', groups_path %></li>
+    <hr>
+    <li><%= link_to 'Logout', '/logout', method: 'post' %></li>
+  </ul>
+</div>
