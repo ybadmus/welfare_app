@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   before_action :require_login, only: %i[destroy show]
-  before_action :logged_out?, except: %i[destroy show]
 
   def index; end
 
@@ -8,10 +7,11 @@ class SessionsController < ApplicationController
     @user = current_user
   end
 
-  def new; end
+  def new; 
+  end
 
   def create
-    @user = User.find_by(username: params[:Name])
+    @user = User.find_by(username: user_params)
     if @user
       session[:user_id] = @user.id
       flash[:notice] = 'Succesfully logged in'
@@ -26,5 +26,10 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     flash[:notice] = 'Succesfully logged out'
     redirect_to root_path
+  end
+
+  private
+  def user_params
+    params.require(:user).permit(:username)
   end
 end

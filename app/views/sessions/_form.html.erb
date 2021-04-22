@@ -1,0 +1,5 @@
+<%= form_with url: "/sessions/create", method: :post do |form| %>
+  <p id="alert"> <%= alert %> </p>
+  <%= form.text_field :username, placeholder: 'Username' %>
+  <%= form.submit 'Sign in' %>
+<% end %>
