@@ -1,15 +1,15 @@
-<%= time_tracker(@exercises) %>
+<%= total_amount(@welfares) %>
 <p id="notice"><%= notice %></p>
 
 <div class="item-box">
-  <% @exercises.order(:created_at).reverse_each do |exercise| %>
+  <% @welfares.order(:created_at).reverse_each do |welfare| %>
   <div class="item">
-    <%= exercise_icon(exercise) %>
-    <p class='item-name'> <%= exercise.Name %> </p>
+    <%= welfare_icon(welfare) %>
+    <p class='item-name'> <%= welfare.Name %> </p>
     <p class="tracker">
-    <%= exercise_stats(exercise) %>
+      <%= welfare_amount(welfare) %>
     </p>
-    <p> <%= time_ago_in_words exercise.created_at %> ago </p>
+    <p> <%= time_ago_in_words welfare.created_at %> ago </p>
   </div>
   <% end %>
 </div>
