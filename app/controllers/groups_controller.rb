@@ -3,8 +3,6 @@ class GroupsController < ApplicationController
 
   def index
     @groups = Group.all.includes(:user)
-    puts "Yusif"
-    puts @groups
   end
 
   def new
