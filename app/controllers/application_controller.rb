@@ -13,7 +13,15 @@ class ApplicationController < ActionController::Base
     if logged_in?
       true
     else
-      redirect_to root_path
+      redirect_to login_path
+    end
+  end
+
+  def already_logged_in
+    if logged_in?
+      redirect_to menu_path
+    else
+      true
     end
   end
 
