@@ -1,0 +1,16 @@
+<%= form_with model: @group do |form| %>
+  <p id="alert"> <%= alert %> </p>
+  <%= form.text_field :name, placeholder: 'Name' %>
+
+  <div class="icons-field">
+    <%= form.label 'Please select the group icon:' %>
+    <% @icons.each do |icon| %>
+      <label>
+        <%= form.radio_button(:icon, icon) %>
+        <%= image_tag(icon) %>
+      </label>
+    <% end %>
+  </div>
+
+  <%= form.submit 'Save' %>
+<% end %>

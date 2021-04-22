@@ -3,10 +3,21 @@ class GroupsController < ApplicationController
 
   def index
     @groups = Group.all.includes(:user)
+    puts "Yusif"
+    puts @groups
   end
 
   def new
     @group = current_user.groups.new
+
+    @icons = [
+      'https://www.flaticon.com/svg/static/icons/svg/926/926158.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/926/926151.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/926/926165.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/926/926161.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/926/926134.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/926/926133.svg'
+    ]
   end
 
   def show
