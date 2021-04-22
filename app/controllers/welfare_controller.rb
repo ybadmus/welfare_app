@@ -9,5 +9,25 @@ class WelfaresController < ApplicationController
                 end
   end
 
-  
+  def new
+    @exercise = current_user.exercises.new
+  end
+
+  def create
+    @welfare = current_user.welfares.new(welfare_params)
+
+    if @welfare.save
+      redirect_to welfares_path(external: true), notice: 'Exercise successfully created.'
+    else
+      flash.now[:alert] = @welfare.errors.full_messages.first
+      render :new
+    end
+  end
+
+  private
+
+  def welfare_params
+    params.require(:welfare).permit(:name, :amount)
+  end
+
 end
