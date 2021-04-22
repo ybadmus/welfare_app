@@ -1,0 +1,5 @@
+<%= form_with model: @user do |form| %>
+  <p id="alert"> <%= alert %> </p>
+  <%= form.text_field :username, placeholder: 'Username' %>
+  <%= form.submit 'Sign up' %>
+<% end %>
