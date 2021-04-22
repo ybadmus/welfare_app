@@ -17,7 +17,12 @@ class WelfaresController < ApplicationController
     @welfare = current_user.welfares.new(welfare_params)
 
     if @welfare.save
-      redirect_to welfares_path(external: true), notice: 'Exercise successfully created.'
+      unless params[:welfare][:group] == ''
+        Group.find(params[:welfare][:group]).welfares << @welfare
+        return redirect_to group_path(params[:welfare][:group]),
+                           notice: 'Welfare successfully added.'
+      end
+      redirect_to welfares_path(external: true), notice: 'Welfare successfully created.'
     else
       flash.now[:alert] = @welfare.errors.full_messages.first
       render :new
