@@ -10,11 +10,11 @@ class WelfaresController < ApplicationController
   end
 
   def new
-    @exercise = current_user.welfares.new
+    @welfare = current_user.welfares.new
   end
 
   def create
-    @welfare = current_user.welfares.new(welfare_params)
+    @welfare = current_user.welfares.build(welfare_params)
 
     if @welfare.save
       unless params[:welfare][:group] == ''
@@ -32,7 +32,7 @@ class WelfaresController < ApplicationController
   private
 
   def welfare_params
-    params.require(:welfare).permit(:name, :amount)
+    params.require(:welfare).permit(:name, :amount, :remark)
   end
 
 end

@@ -1,4 +1,4 @@
-<%= form_with(model: welfare, local: true) do |form| %>
+<%= form_with model: @welfare do |form| %>
     <p id="alert"> <%= alert %> </p>
   
     <%= form.text_field :name, placeholder: 'Full name', class: 'name-input' %>

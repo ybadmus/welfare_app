@@ -24,6 +24,6 @@ module WelfareHelper
   end
 
   def welfare_amount(welfare)
-    raw("<strong> #{welfare.Amount.nil? ? '' : "GHS #{welfare.Amount}"} </strong>")
+    raw("<strong> #{welfare.amount.nil? ? '' : "GHS #{welfare.amount}"} </strong>")
   end
 end

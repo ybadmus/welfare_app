@@ -5,7 +5,7 @@
   <% @welfares.order(:created_at).reverse_each do |welfare| %>
   <div class="item">
     <%= welfare_icon(welfare) %>
-    <p class='item-name'> <%= welfare.Name %> </p>
+    <p class='item-name'> <%= welfare.name %> </p>
     <p class="tracker">
       <%= welfare_amount(welfare) %>
     </p>
