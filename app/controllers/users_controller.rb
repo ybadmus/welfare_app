@@ -9,8 +9,8 @@ class UsersController < ApplicationController
 
     @user = User.new
     @icons = [
-      'https://www.flaticon.com/svg/vstatic/svg/3891/3891991.svg?token=exp=1619183769~hmac=9a922c2cd2e4255612536e74ecb142f6',
-      'https://www.flaticon.com/svg/vstatic/svg/3135/3135789.svg?token=exp=1619184011~hmac=6e13a5ee1497193a204d4ce1672a7958',
+      'https://www.flaticon.com/svg/static/icons/svg/3891/3891991.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/3135/3135789.svg',
     ]
   end
 

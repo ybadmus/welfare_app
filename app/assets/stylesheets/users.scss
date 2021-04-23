@@ -2,7 +2,7 @@ $second-color: #5fb523;
 
 .user-icon {
   width: 45%;
-  border: greenyellow solid 3px;
+  border: #434b54 solid 3px;
   border-radius: 100px;
   margin: 0 auto;
 }
@@ -16,9 +16,10 @@ label {
   }
 
   .icon {
-    width: 5rem;
-    height: 5rem;
+    width: 6.2rem;
+    height: 6.2rem;
     border: 2px solid transparent;
+    border-radius: 50%;
   }
 
   .icon-select + .icon {
