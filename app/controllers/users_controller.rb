@@ -7,6 +7,14 @@ class UsersController < ApplicationController
 
   def new 
     @user = User.new
+    @icons = [
+      'https://www.flaticon.com/svg/static/icons/svg/1869/1869342.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/1869/1869616.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/1869/1869436.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/1869/1869387.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/1869/1869393.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/1869/1869359.svg'
+    ]
   end
 
   def create 

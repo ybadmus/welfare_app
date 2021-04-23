@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'menu', to: 'sessions#show'
   get 'login', to: 'sessions#new'
-  get 'signup', to: 'users#new'
+  post 'signup', to: 'users#new'
   post 'login', to: 'sessions#create'
   post 'logout', to: 'sessions#destroy'
 end
