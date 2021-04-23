@@ -17,9 +17,9 @@ module WelfareHelper
     group = welfare.groups.first
 
     if group.nil?
-      #image_tag(exercise.user.icon, class: 'item-icon')
+      image_tag(welfare.user.icon, class: 'item-icon')
     else
-      link_to image_tag(group.Icon), group_path(group.id), class: 'item-icon'
+      link_to image_tag(group.icon), group_path(group.id), class: 'item-icon'
     end
   end
 
