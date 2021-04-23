@@ -1,4 +1,6 @@
-<h1>Welfare collections app</h1>
+<div class="main-page-content">
+  <h1 class="main-title">Welfare collection app</h1>
 
-<%= button_to "Log in", login_path %>
-<%= button_to  "Sign up", signup_path %> 
+  <%= button_to "Log in", login_path, method: :get, class: 'login-btn' %>
+  <%= button_to  "Sign up", new_user_path, method: :get, class: 'signup-btn' %> 
+</div>

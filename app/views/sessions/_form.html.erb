@@ -1,5 +1,9 @@
 <%= form_with url: "/login", method: :post do |form| %>
+
   <p id="alert"> <%= alert %> </p>
-  <%= form.text_field :username, placeholder: 'Username' %>
-  <%= form.submit 'Sign in' %>
+
+  <%= form.text_field :username, placeholder: 'Username', class: "name-input" %>
+
+  <%= form.submit 'Sign in', class: 'submit-btn' %>
+  
 <% end %>
