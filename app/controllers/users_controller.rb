@@ -6,14 +6,11 @@ class UsersController < ApplicationController
   end
 
   def new 
+
     @user = User.new
     @icons = [
-      'https://www.flaticon.com/svg/static/icons/svg/1869/1869342.svg',
-      'https://www.flaticon.com/svg/static/icons/svg/1869/1869616.svg',
-      'https://www.flaticon.com/svg/static/icons/svg/1869/1869436.svg',
-      'https://www.flaticon.com/svg/static/icons/svg/1869/1869387.svg',
-      'https://www.flaticon.com/svg/static/icons/svg/1869/1869393.svg',
-      'https://www.flaticon.com/svg/static/icons/svg/1869/1869359.svg'
+      'https://www.flaticon.com/svg/vstatic/svg/3891/3891991.svg?token=exp=1619183769~hmac=9a922c2cd2e4255612536e74ecb142f6',
+      'https://www.flaticon.com/svg/vstatic/svg/3135/3135789.svg?token=exp=1619184011~hmac=6e13a5ee1497193a204d4ce1672a7958',
     ]
   end
 
@@ -31,7 +28,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:username)
+    params.require(:user).permit(:username, :icon)
   end
 
 end
