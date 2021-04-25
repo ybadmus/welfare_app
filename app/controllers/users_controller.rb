@@ -1,20 +1,19 @@
 class UsersController < ApplicationController
-  #skip_before_action :verify_authenticity_token
+  # skip_before_action :verify_authenticity_token
 
   def show
     @user = current_user
   end
 
-  def new 
-
+  def new
     @user = User.new
     @icons = [
       'https://www.flaticon.com/svg/static/icons/svg/3891/3891991.svg',
-      'https://www.flaticon.com/svg/static/icons/svg/3135/3135789.svg',
+      'https://www.flaticon.com/svg/static/icons/svg/3135/3135789.svg'
     ]
   end
 
-  def create 
+  def create
     @user = User.create(user_params)
 
     if @user.save
@@ -27,8 +26,8 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit(:username, :icon)
   end
-
 end

@@ -20,7 +20,7 @@ class GroupsController < ApplicationController
       'https://cdn1.vectorstock.com/i/thumb-large/98/55/september-dates-flat-icon-with-long-shadow-vector-9319855.jpg',
       'https://cdn5.vectorstock.com/i/1000x1000/98/44/october-dates-flat-icon-with-long-shadow-vector-9319844.jpg',
       'https://cdn5.vectorstock.com/i/1000x1000/98/49/november-dates-flat-icon-with-long-shadow-vector-9319849.jpg',
-      'https://cdn2.vectorstock.com/i/1000x1000/98/51/december-dates-flat-icon-with-long-shadow-vector-9319851.jpg',
+      'https://cdn2.vectorstock.com/i/1000x1000/98/51/december-dates-flat-icon-with-long-shadow-vector-9319851.jpg'
     ]
   end
 
@@ -40,8 +40,8 @@ class GroupsController < ApplicationController
   end
 
   private
-  
-  def group_params 
+
+  def group_params
     params.require(:group).permit(:name, :icon)
   end
 end

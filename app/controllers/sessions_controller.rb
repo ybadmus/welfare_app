@@ -8,8 +8,7 @@ class SessionsController < ApplicationController
     @user = current_user
   end
 
-  def new; 
-  end
+  def new; end
 
   def create
     @user = User.find_by(username: params[:username])
@@ -28,5 +27,4 @@ class SessionsController < ApplicationController
     flash[:notice] = 'Succesfully logged out'
     redirect_to root_path
   end
-
 end

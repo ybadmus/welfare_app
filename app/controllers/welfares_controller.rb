@@ -4,8 +4,8 @@ class WelfaresController < ApplicationController
   def index
     @welfares = if params[:external]
                   current_user.welfares.not_grouped.includes(:groups)
-                else 
-                  current_user.welfares.includes(:groups) 
+                else
+                  current_user.welfares.includes(:groups)
                 end
   end
 
@@ -34,5 +34,4 @@ class WelfaresController < ApplicationController
   def welfare_params
     params.require(:welfare).permit(:name, :amount, :remark)
   end
-
 end

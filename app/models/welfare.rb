@@ -9,4 +9,4 @@ class Welfare < ApplicationRecord
   belongs_to :user, class_name: 'User', foreign_key: :authorId
   has_many :categories
   has_many :groups, through: :categories
-end 
+end

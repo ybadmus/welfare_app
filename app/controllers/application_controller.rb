@@ -24,5 +24,4 @@ class ApplicationController < ActionController::Base
       true
     end
   end
-
 end
