@@ -11,6 +11,8 @@ class WelfaresController < ApplicationController
 
   def new
     @welfare = current_user.welfares.new
+    @groups = [["Select group", ""]]
+    Group.all.each { |item| @groups << [item.name, item.id] }
   end
 
   def create

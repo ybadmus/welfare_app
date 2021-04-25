@@ -2,6 +2,7 @@ class Welfare < ApplicationRecord
   validates :name, presence: true
   validates :amount, presence: true
   validates :remark, length: { maximum: 250 }
+  validates :group, presence: false
 
   scope :not_grouped, -> { left_outer_joins(:categories).where('categories.group_id' => nil) }
   scope :total_amount, -> { sum(:amount) }

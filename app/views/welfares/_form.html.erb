@@ -2,8 +2,8 @@
     <p id="alert"> <%= alert %> </p>
   
     <%= form.text_field :name, placeholder: 'Full name', class: 'name-input' %>
+    <%= form.select :group, @groups, class: 'name-input', selected: params[:group]  %>
     <%= form.number_field :amount, placeholder: 'Amount', class: 'name-input' %>
     <%= form.text_area :remark, placeholder: 'Remark', class: 'name-input' %>
-    <%= form.hidden_field :group, value: params[:group]  %>
     <%= form.submit 'Save', class: 'action-btn' %>
 <% end %>
