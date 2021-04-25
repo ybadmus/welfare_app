@@ -42,7 +42,7 @@ td {
 main {
   width: 28rem;
   margin: 0 auto;
-  background-color: #f1f3f2;
+  background-color: #eceeed;
 }
 
 pre {
@@ -230,6 +230,17 @@ div.actions {
     position: absolute;
     right: 0;
     padding: 1.4rem;
+  }
+
+  a {
+    padding: 0 1rem;
+    position: absolute;
+
+    img {
+      position: relative;
+      border-radius: 50%;
+      width: 5rem;
+    }
   }
 }
 

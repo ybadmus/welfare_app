@@ -6,16 +6,15 @@ $text-color: #434b54;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 
   .main-title {
-    position: absolute;
-    top: 35%;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     color: $text-color;
     font-family: "Lobster Two", cursive;
     letter-spacing: 2.5px;
+    line-height: normal;
   }
 
   .login-btn {
