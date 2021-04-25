@@ -2,7 +2,7 @@ class GroupsController < ApplicationController
   before_action :require_login
 
   def index
-    @groups = Group.all.includes(:user)
+    @groups = Group.all.order(name: :desc).includes(:user)
   end
 
   def new
