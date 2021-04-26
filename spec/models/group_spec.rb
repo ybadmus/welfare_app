@@ -28,7 +28,7 @@ RSpec.describe Group, type: :model do
       g = Group.reflect_on_association(:user)
       expect(g.macro).to eq(:belongs_to)
     end
-    it 'should have many exercises' do
+    it 'should have many welfares' do
       g = Group.reflect_on_association(:welfares)
       expect(g.macro).to eq(:has_many)
     end
