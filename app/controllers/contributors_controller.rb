@@ -8,6 +8,7 @@ class ContributorsController < ApplicationController
 
   def show
     @contributor = Contributor.find(params[:id])
+    @welfares = Welfare.where(contributor_no: @contributor.contributor_no)
   end
 
   def new

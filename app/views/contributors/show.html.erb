@@ -1,32 +1,3 @@
-<h1 class="nav-title">Edit contributor</h1>
+<h1 class="nav-title"><%= @contributor.name %></h1>
 
-<%= form_with model: @contributor do |form| %>
-  
-  <p id="alert"> <%= alert %> </p>
-
-  <%= form.label :contributor_no %>:
-
-  <br>
-  
-  <%= form.text_field :contributor_no, placeholder: 'Welfare No.', class: 'name-input-contributor' %>
-
-  <br>
-
-  <%= form.label :name %>:
-
-  <br>
-
-  <%= form.text_field :name, placeholder: 'Full name', class: 'name-input-contributor' %>
-
-  <br>
-
-  <%= form.label :phonenumber %>:
-
-  <br>
-
-  <%= form.text_field :phonenumber, placeholder: 'Phone number', class: 'name-input-contributor' %>
-
-  <br>
-
-  <%= button_to "Edit details", contributors_path, method: :post, class: 'save-btn' %>
-<% end %>
+<%= render 'welfares/welfare', collection: @welfares  %>
