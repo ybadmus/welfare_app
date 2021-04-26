@@ -6,6 +6,10 @@ class ContributorsController < ApplicationController
     @contributors = Contributor.all
   end
 
+  def show
+    @contributor = Contributor.find(params[:id])
+  end
+
   def new
     @contributor = Contributor.new
     @icons = [

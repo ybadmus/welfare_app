@@ -97,6 +97,7 @@ div.actions {
 
   form {
     width: 100%;
+    padding-top: 1rem;
 
     .submit-btn {
       position: absolute;
@@ -111,6 +112,15 @@ div.actions {
 
     .name-input {
       margin-top: 1.5rem;
+      width: 80%;
+      border: 1px lightgray solid;
+      padding: 0.7rem 1rem;
+      border-radius: 4px;
+    }
+
+    .name-input-contributor {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       width: 80%;
       border: 1px lightgray solid;
       padding: 0.7rem 1rem;
