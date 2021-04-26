@@ -35,7 +35,7 @@ class WelfaresController < ApplicationController
   private
 
   def welfare_params
-    params.require(:welfare).permit(:name, :amount, :remark)
+    params.require(:welfare).permit(:contributor_no, :name, :amount, :remark)
   end
 
   def initialize_values

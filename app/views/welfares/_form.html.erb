@@ -1,6 +1,7 @@
 <%= form_with model: @welfare do |form| %>
     <p id="alert"> <%= alert %> </p>
-  
+
+    <%= form.text_field :contributor_no, placeholder: 'Welfare No.', class: 'name-input' %>
     <%= form.text_field :name, placeholder: 'Full name', class: 'name-input' %>
     <%= form.select :group, @groups, class: 'name-input', selected: params[:group]  %>
     <%= form.number_field :amount, placeholder: 'Amount', class: 'name-input' %>
