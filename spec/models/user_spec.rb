@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'rails_helper.rb'
 
 RSpec.describe User, type: :model do
   let(:valid_attributes) { {name: 'User name', icon: 'user-icon' } }
