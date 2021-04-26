@@ -1,5 +1,6 @@
 class WelfaresController < ApplicationController
   before_action :require_login
+  before_action :initialize_values
 
   def index
     @welfares = if params[:external]
@@ -35,5 +36,11 @@ class WelfaresController < ApplicationController
 
   def welfare_params
     params.require(:welfare).permit(:name, :amount, :remark)
+  end
+
+  def initialize_values
+    @welfare = current_user.welfares.new
+    @groups = [["Select group", ""]]
+    Group.all.each { |item| @groups << [item.name, item.id] }
   end
 end
