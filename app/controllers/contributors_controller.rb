@@ -28,7 +28,7 @@ class ContributorsController < ApplicationController
   private
 
   def contributor_params
-    params.require(:contributor).permit(:name, :phonenumber, :contributor_no)
+    params.require(:contributor).permit(:name, :phonenumber, :contributor_no, :icon)
   end
 
   def initialize_values

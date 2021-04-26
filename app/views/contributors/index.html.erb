@@ -1,2 +1,7 @@
 <h1 class="nav-title">Contributors</h1>
+
+<p id="notice"><%= notice %></p>
+
+<%= render 'contributor', group: @contributors %>
+
 <%= link_to raw("<span>New Contributor</span>"), new_contributor_path, class: 'action-btn-contributor' %>
