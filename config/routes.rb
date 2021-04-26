@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :welfares, only: [:index, :new, :create]
   resources :groups, only: [:index, :new, :show, :create]
   resources :users, only: [:new, :create]
+  resources :contributors, only: [:index, :new, :create]
   
   root 'sessions#index'
 
