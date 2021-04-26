@@ -1,8 +1,8 @@
 require 'rails_helper.rb'
 
 RSpec.describe User, type: :model do
-  let(:valid_attributes) { {name: 'User name', icon: 'user-icon' } }
-  let(:invalid_attributes) { { name: 'Extremely long user same' } }
+  let(:valid_attributes) { { username: 'User name', icon: 'user-icon' } }
+  let(:invalid_attributes) { { username: 'Extremely long user same' } }
 
   describe 'Validations tests for User model' do
     context 'with valid parameters' do
