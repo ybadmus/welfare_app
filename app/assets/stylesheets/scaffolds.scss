@@ -156,6 +156,14 @@ div.actions {
     }
   }
 
+  .save-btn {
+    text-align: center;
+    padding: 0.5rem 7rem;
+    border-radius: 4px;
+    margin: 1rem 2rem;
+    color: #fff;
+    background-color: $second-color;
+  }
 
   .action-btn-contributor {
     width: 100%;
