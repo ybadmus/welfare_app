@@ -15,4 +15,3 @@ RSpec.describe WelfaresController, type: :routing do
     end
   end
 end
-

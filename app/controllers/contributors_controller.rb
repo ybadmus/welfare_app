@@ -44,4 +44,3 @@ class ContributorsController < ApplicationController
     ]
   end
 end
-

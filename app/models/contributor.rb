@@ -6,4 +6,3 @@ class Contributor < ApplicationRecord
 
   has_many :welfares, foreign_key: :contributor_no
 end
-

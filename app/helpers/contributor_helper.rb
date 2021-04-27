@@ -7,4 +7,3 @@ module ContributorHelper
     end
   end
 end
-

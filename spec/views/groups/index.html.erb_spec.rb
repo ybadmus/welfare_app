@@ -26,4 +26,3 @@ RSpec.describe 'groups/index', type: :view do
     expect(rendered).to match(/Name2/)
   end
 end
-
