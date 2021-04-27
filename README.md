@@ -6,6 +6,7 @@ The project is built for the Ruby on Rails capstone, it's based on an app for gr
 ![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_2.PNG)
 ![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_3.PNG)
 ![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_4.PNG)
+![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_5.PNG)
 
 ## Built With
 
