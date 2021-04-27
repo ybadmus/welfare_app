@@ -25,8 +25,7 @@ To run this application locally, you will need to have:
 
 - Ruby version 2.7 and above
 - Rails installed
-- Yarn & NPM installed
-- A terminal
+- PostgresSQL
 
 Once you have all the above listed:
 
@@ -40,7 +39,24 @@ Once you have all the above listed:
 - run `rails db: migrate` to migrate the database 
 - run `rails server`
 - Go to `http://localhost:3000` on your browser to view the homepage of the application 
-- FinaLly run `rails console` to inspect the structure of the database and the data you stored.
+- Finally run `rails console` to inspect the structure of the database and the data you stored.
+
+### Running Tests
+
+To run the project tests, run the following command:
+```
+rspec -f D
+```
+
+### Deploy on Heroku
+
+You can deploy the project on [Heroku](https://www.heroku.com/) using the following steps:
+
+1. Create a Heroku Account
+2. On the terminal, run `heroku create` to create a new app
+3. Run `heroku push` to start a deployment on Heroku.
+4. Run `heroku migrate` to run migrations on your production database.
+5. Visit your project URL as assigned by Heroku to see a live deployment of Fakebook.
 
 ## Authors
 
