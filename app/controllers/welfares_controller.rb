@@ -12,7 +12,7 @@ class WelfaresController < ApplicationController
 
   def new
     @welfare = current_user.welfares.new
-    @groups = [["Select group", ""]]
+    @groups = [['Select group', '']]
     Group.all.each { |item| @groups << [item.name, item.id] }
   end
 
@@ -40,7 +40,7 @@ class WelfaresController < ApplicationController
 
   def initialize_values
     @welfare = current_user.welfares.new
-    @groups = [["Select group", ""]]
+    @groups = [['Select group', '']]
     Group.all.each { |item| @groups << [item.name, item.id] }
   end
 end

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Welfare, type: :model do
   let(:user) { User.create(username: 'Welfare creator', icon: 'user-icon') }
   let(:valid_attributes) { { name: 'Welfare Name', remark: 'Good contributor', contributor_no: 'GD5670', amount: 2 } }
-  let(:invalid_attributes) { { name: '', remark: '', contributor_no: '', amount: 2  } }
+  let(:invalid_attributes) { { name: '', remark: '', contributor_no: '', amount: 2 } }
 
   describe 'Validations tests for Welfare model' do
     context 'with valid parameters' do
