@@ -1,0 +1,10 @@
+<div class="item-box">
+  <% @contributors.order(:created_at).reverse_each do |contributor| %>
+  <div class="item">
+    <%= contributor_icon(contributor) %>
+    <p class='item-name'> <%= contributor.name %> </p>
+    <p> Phone: <b><%= contributor.phonenumber %></b></p>
+    <p> Welfare No: <b><%= contributor.contributor_no %></b></p>
+  </div>
+  <% end %>
+</div>

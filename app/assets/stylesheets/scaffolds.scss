@@ -97,6 +97,7 @@ div.actions {
 
   form {
     width: 100%;
+    padding-top: 1rem;
 
     .submit-btn {
       position: absolute;
@@ -111,6 +112,15 @@ div.actions {
 
     .name-input {
       margin-top: 1.5rem;
+      width: 80%;
+      border: 1px lightgray solid;
+      padding: 0.7rem 1rem;
+      border-radius: 4px;
+    }
+
+    .name-input-contributor {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       width: 80%;
       border: 1px lightgray solid;
       padding: 0.7rem 1rem;
@@ -152,6 +162,35 @@ div.actions {
     span {
       border: 1px #fff solid;
       padding: 0.5rem 32%;
+      border-radius: 4px;
+    }
+  }
+
+  .save-btn {
+    text-align: center;
+    padding: 0.5rem 7rem;
+    border-radius: 4px;
+    margin: 1rem 2rem;
+    color: #fff;
+    background-color: $second-color;
+  }
+
+  .action-btn-contributor {
+    width: 100%;
+    padding: 1.5rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: $second-color;
+    border: none;
+    cursor: pointer;
+
+    span {
+      border: 1px #fff solid;
+      padding: 0.5rem 20%;
       border-radius: 4px;
     }
   }
