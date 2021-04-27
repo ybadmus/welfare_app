@@ -2,12 +2,22 @@
 
 The project is built for the Ruby on Rails capstone, it's based on an app for grouping payments made by members in a certain society by months.
 
+![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot.PNG)
+![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_2.PNG)
+![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_3.PNG)
+![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_4.PNG)
+![screenshot](https://raw.githubusercontent.com/ybadmus/welfare_app/welfare/app_screenshot_5.PNG)
+
 ## Built With
 
 - Ruby on Rails
 - Using Linters for Ruby and Stylelint
 - Git, GitHub
 - Using Bundler
+
+## Live Demo
+
+ [Live demo link](https://sheltered-taiga-40435.herokuapp.com/
 
 ## Getting Started
 

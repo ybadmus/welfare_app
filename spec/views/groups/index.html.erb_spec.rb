@@ -6,12 +6,12 @@ RSpec.describe 'groups/index', type: :view do
   before(:each) do
     assign(:groups, [
              user.groups.create!(
-              name: 'Name1',
-              icon: 'https://www.flaticon.com/svg/static/icons/svg/926/926158.svg'
+               name: 'Name1',
+               icon: 'https://www.flaticon.com/svg/static/icons/svg/926/926158.svg'
              ),
              user.groups.create!(
-              name: 'Name2',
-              icon: 'https://www.flaticon.com/svg/static/icons/svg/926/926158.svg'
+               name: 'Name2',
+               icon: 'https://www.flaticon.com/svg/static/icons/svg/926/926158.svg'
              )
            ])
   end

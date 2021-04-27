@@ -4,7 +4,6 @@ module ContributorHelper
       image_tag(current_user.icon, class: 'item-icon')
     else
       link_to image_tag(contributor.icon), contributor_path(contributor.id)
-      #link_to image_tag(contributor.icon)
     end
   end
 end
