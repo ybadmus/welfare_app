@@ -5,4 +5,6 @@ RSpec.describe 'users/new', type: :feature do
     visit new_user_url
     expect(:username).to match(/username/)
   end
+
 end
+

@@ -17,6 +17,7 @@ RSpec.describe 'welfares/new', type: :view do
     render
 
     assert_select 'form[action=?][method=?]', welfares_path, 'post' do
+
       assert_select 'input[name=?]', 'welfare[contributor_no]'
 
       assert_select 'input[name=?]', 'welfare[name]'
@@ -30,3 +31,4 @@ def initialize_values
   @groups = [['Select group', '']]
   Group.all.each { |item| @groups << [item.name, item.id] }
 end
+

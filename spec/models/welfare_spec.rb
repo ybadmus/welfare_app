@@ -38,3 +38,4 @@ RSpec.describe Welfare, type: :model do
     end
   end
 end
+

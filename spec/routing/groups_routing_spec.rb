@@ -19,3 +19,4 @@ RSpec.describe GroupsController, type: :routing do
     end
   end
 end
+

@@ -11,3 +11,4 @@ RSpec.describe UsersController, type: :routing do
     end
   end
 end
+

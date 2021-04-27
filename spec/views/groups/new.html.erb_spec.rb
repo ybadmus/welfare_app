@@ -6,3 +6,4 @@ RSpec.describe 'groups/new', type: :feature do
     expect(:name).to match(/name/)
   end
 end
+
